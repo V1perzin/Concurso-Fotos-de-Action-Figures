@@ -1,0 +1,14 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Inscrição - Concurso de Fotografias</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Formulário de Inscrição - Concurso de Fotografias</h2>
+
+<form id="registrationForm">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <span class="error" id="error-nome"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="error-email"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" required>
+        <span class="error" id="error-telefone"></span>
+        <small>Formato: 1234567890 (sem espaços ou caracteres especiais)</small>
+    </div>
+
+    <div class="form-group">
+        <label for="foto">Anexo de Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required>
+        <span class="error" id="error-foto"></span>
+        <small>Formatos suportados: JPG, PNG, GIF. Tamanho máximo: 5MB.</small>
+    </div>
+
+    <button type="submit">Enviar Inscrição</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
