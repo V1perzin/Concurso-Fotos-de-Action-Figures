@@ -1,5 +1,92 @@
+
+body {
+    background-color: rgba(51, 45, 106, 0.9); /* Cor branca com 90% de opacidade */
+    background-image: url('imagens/IMG_KANTAI.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f3f4f8; /* Cor do texto escura */
+    text-shadow: 1px 1px 2px rgba(249, 245, 245, 0.3); /* Sombra de texto para melhorar a visibilidade */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+}
+
+.container {
+    width: 80%;
+    max-width: 600px; /* Largura máxima do container */
+    background-color: rgba(255, 255, 255, 0.9); /* Cor branca com 90% de opacidade */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    margin-top: 0; /* Remove o espaçamento superior padrão */
+    margin-bottom: 20px; /* Espaçamento abaixo do título principal */
+    text-align: center; /* Centraliza o texto do título */
+    padding: 15px; /* tamanho da borda */
+    background-color:rgba(83, 83, 83, 0.779);
+    border: 2px solid #453dd7be;
+    border-radius: 8px;
+    color: white;
+}
+
+form {
+    width: 50%;
+    display: left;
+    flex-direction: column; /* Coloca os elementos um em cima do outro */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: left; /* Alinha os textos à esquerda dentro do formulário */
+    background-color: rgba(83, 83, 83, 0.779); /*remover caso não de certo*/
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .form-group {
+    width: 100%;  /*removi text-align: left; */
     margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Faz com que os rótulos ocupem toda a largura disponível */
+    margin-bottom: 5px; /* Espaçamento abaixo de cada rótulo */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: calc(100% - 10px); /* Ocupa toda a largura do container pai */
+    padding: 8px; /* Espaçamento interno dos campos */
+    font-size: 16px; /* Tamanho da fonte dos campos */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 4px; /* Borda arredondada dos campos */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    margin-left: calc(100 - 40px);
+}
+
+button {
+    width: 100%; /* Botão ocupa toda a largura do seu container */
+    padding: 10px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 4px; /* Borda arredondada do botão */
+    cursor: pointer; /* Cursor ao passar por cima do botão */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+button:hover {
+    background-color: #19208a; /* Cor de fundo do botão ao passar o mouse */
 }
 
 .error {
