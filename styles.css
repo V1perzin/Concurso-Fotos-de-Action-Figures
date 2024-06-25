@@ -29,9 +29,11 @@ body {
 
 h2 {
     margin-top: 0; /* Remove o espaçamento superior padrão */
-    margin-bottom: 20px; /* Espaçamento abaixo do título principal */
-    text-align: center; /* Centraliza o texto do título */
-    padding: 15px; /* tamanho da borda */
+    font-size: 200%;
+    margin-left: -480px;
+    margin-bottom: 80px; /* Espaçamento abaixo do título principal */
+    text-align: left; /* Centraliza o texto do título */
+    padding: 40px; /* tamanho da borda */
     background-color:rgba(83, 83, 83, 0.779);
     border: 2px solid #453dd7be;
     border-radius: 8px;
@@ -39,7 +41,8 @@ h2 {
 }
 
 form {
-    width: 50%; /* tamanho do campo no centro da tela*/
+    width: 30%; /* tamanho do campo no centro da tela*/
+    margin-left: -1000px;
     display: left;
     flex-direction: column; /* Coloca os elementos um em cima do outro */
     align-items: center; /* Centraliza os elementos horizontalmente */
