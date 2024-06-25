@@ -51,7 +51,7 @@ function validateForm() {
     return isValid;
 }
 
-function isValidEmail(email) {
+function isValidEmail(email) { /*funçaõ não habilitada é necessário back-end*/
     // Basic email validation using regex
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);

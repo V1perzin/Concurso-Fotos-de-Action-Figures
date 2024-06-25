@@ -39,13 +39,13 @@ h2 {
 }
 
 form {
-    width: 50%;
+    width: 50%; /* tamanho do campo no centro da tela*/
     display: left;
     flex-direction: column; /* Coloca os elementos um em cima do outro */
     align-items: center; /* Centraliza os elementos horizontalmente */
     text-align: left; /* Alinha os textos à esquerda dentro do formulário */
     background-color: rgba(83, 83, 83, 0.779); /*remover caso não de certo*/
-    padding: 40px;
+    padding: 40px; /*tamanho da borda*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
