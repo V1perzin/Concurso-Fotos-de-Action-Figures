@@ -51,6 +51,7 @@ form {
     padding: 40px; /*tamanho da borda*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #453dd7be;
 }
 
 .form-group {
@@ -70,7 +71,7 @@ input[type="file"] {
     width: calc(100% - 10px); /* Ocupa toda a largura do container pai */
     padding: 8px; /* Espaçamento interno dos campos */
     font-size: 16px; /* Tamanho da fonte dos campos */
-    border: 1px solid #ccc; /* Borda dos campos */
+    border: 1px solid #52525200; /* Borda dos campos */
     border-radius: 4px; /* Borda arredondada dos campos */
     box-sizing: border-box; /* Inclui o padding e a borda na largura total */
     margin-left: calc(100 - 40px);
@@ -86,6 +87,7 @@ button {
     border-radius: 4px; /* Borda arredondada do botão */
     cursor: pointer; /* Cursor ao passar por cima do botão */
     transition: background-color 0.3s; /* Transição suave de cor de fundo */
+    border: 2px solid #453dd7be;
 }
 
 button:hover {

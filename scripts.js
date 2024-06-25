@@ -34,6 +34,12 @@ function validateForm() {
         isValid = false;
     }
 
+    let descricao = document.getElementById('descricao').value.trim();
+    if (descricao === '') {
+        document.getElementById('error-descricao').textContent = 'Campo de descrição obrigatório';
+        isValid = false;
+    }
+
     // Validate Foto
     let foto = document.getElementById('foto').files[0];
     if (!foto) {
