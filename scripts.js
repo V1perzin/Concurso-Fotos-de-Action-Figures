@@ -23,21 +23,26 @@ function validateForm() {
         isValid = false;
     }
 
-    // Validate Telefone
-    let telefone = document.getElementById('telefone').value.trim();
-    let telefonePattern = /^[0-9]{10}$/;
-    if (telefone === '') {
-        document.getElementById('error-telefone').textContent = 'Campo obrigatório';
-        isValid = false;
-    } else if (!telefonePattern.test(telefone)) {
-        document.getElementById('error-telefone').textContent = 'Formato inválido (ex: 1234567890)';
-        isValid = false;
-    }
-
-    let descricao = document.getElementById('descricao').value.trim();
-    if (descricao === '') {
-        document.getElementById('error-descricao').textContent = 'Campo de descrição obrigatório';
-        isValid = false;
+    function validarTelefone() {
+        // Resetar mensagens de erro
+        document.getElementById('error-telefone').textContent = '';
+    
+        // Pegar valor do campo telefone e remover espaços em branco
+        let telefone = document.getElementById('telefone').value.trim();
+    
+        // Padrão para aceitar exatamente 11 dígitos numéricos
+        let telefonePattern = /^\d{9,11}$/;
+    
+        // Validar telefone
+        if (telefone === '') {
+            document.getElementById('error-telefone').textContent = 'Campo obrigatório';
+        } else if (!telefonePattern.test(telefone)) {
+            document.getElementById('error-telefone').textContent = 'Telefone deve conter exatamente 11 dígitos numéricos';
+        } else {
+            // Telefone válido
+            alert('Telefone válido: ' + telefone);
+            // Aqui você pode fazer qualquer ação adicional, como enviar o formulário, etc.
+        }
     }
 
     // Validate Foto
